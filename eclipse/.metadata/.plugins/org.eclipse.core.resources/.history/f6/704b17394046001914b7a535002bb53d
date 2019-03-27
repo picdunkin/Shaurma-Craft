@@ -1,0 +1,50 @@
+package com.lanf0rt.superFoods;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemFood;
+import net.minecraft.item.ItemStack;
+
+@Mod(modid = "sfs", name = "Super Food", version = "1.0")
+public class SuperFoods {
+	
+	public static Item eliteShaurma;
+	public static Shaurma shaurma;
+	public static Item salad;
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event) {
+		//Item/block init and register, config handle
+		eliteShaurma = new ItemFood(10, 1.0F, false).setUnlocalizedName("eliteShaurma").setTextureName("sfs:eliteshaurma").setCreativeTab(superFoodsTab);
+		shaurma = (Shaurma) new Shaurma(10, 1.0F, false);
+		salad = new ItemFood(5, 1.0F, false).setUnlocalizedName("Salad").setTextureName("sfs:salad").setCreativeTab(superFoodsTab);
+		GameRegistry.registerItem(eliteShaurma, eliteShaurma.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(shaurma, shaurma.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(salad, salad.getUnlocalizedName().substring(5));
+	}
+	
+	@EventHandler
+	public void init(FMLInitializationEvent event) {
+		//proxy, timeentity, entyty, gui, packet reg
+		GameRegistry.addRecipe(new ItemStack(shaurma), new Object[] {"WWW","RRR"," R ", 'R' ,Items.rotten_flesh, 'W', Items.wheat});
+		//GameRegistry.addSmelting(eliteShaurma, new ItemStack(Blocks.diamond_block, 2), 1.0F);
+	}
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent event) {
+		//proxy, timeentity, entyty, gui, packet reg
+	}
+	public static CreativeTabs superFoodsTab = new CreativeTabs("tabSuperFoods") {
+		@Override
+		public Item getTabIconItem() {
+			return new ItemStack(eliteShaurma).getItem();
+		}
+	};
+}

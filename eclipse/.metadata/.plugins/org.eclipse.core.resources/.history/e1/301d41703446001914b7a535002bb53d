@@ -1,0 +1,42 @@
+package com.lanf0rt.superFoods;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemFood;
+import net.minecraft.item.ItemStack;
+
+@Mod(modid = "sfs", name = "Super Food", version = "1.0")
+public class SuperFoods {
+	public static Item eliteShaurma;
+	public static Item salad;
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event) {
+		//Item/block init and register
+		//config handle
+		eliteShaurma = new ItemFood(20, 1.0F, false).setUnlocalizedName("eliteShaurma").setTextureName("sfs:eliteshaurma").setCreativeTab(superFoodsTab);
+		//eliteShaurma = new eliteShaurma().setUnlocalizedName("eliteShaurma").setTextureName("sfs:superfood");
+		GameRegistry.registerItem(eliteShaurma, eliteShaurma.getUnlocalizedName().substring(5));//—ино не хочет в историю
+	}
+	@EventHandler
+	public void init(FMLInitializationEvent event) {
+		//proxy, timeentity, entyty, gui, packet reg
+		GameRegistry.addRecipe(new ItemStack(eliteShaurma), new Object[] {"WWW","RRR"," R ", 'R' ,Items.rotten_flesh, 'W', Items.wheat});
+	}
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent event) {
+		//proxy, timeentity, entyty, gui, packet reg
+	}
+	public static CreativeTabs superFoodsTab = new CreativeTabs("tabSuperFoods") {
+		@Override
+		public Item getTabIconItem() {
+			return new ItemStack(eliteShaurma).getItem();
+		}
+	};
+}

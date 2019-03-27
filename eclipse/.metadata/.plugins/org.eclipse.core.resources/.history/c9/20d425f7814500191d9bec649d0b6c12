@@ -1,0 +1,25 @@
+package com.lanf0rt.superFoods;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+
+@Mod(modid = "sfs", name = "Super Food", version = "1.0")
+public class SuperFoods {
+	public static Item fish;
+	
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event) {
+		//Item/block init and register
+		//config handle
+	}
+	@EventHandler
+	public void init(FMLInitializationEvent event) {
+		//proxy, timeentity, entyty, gui, packet reg
+	}
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent event) {
+		//proxy, timeentity, entyty, gui, packet reg
+	}
+}

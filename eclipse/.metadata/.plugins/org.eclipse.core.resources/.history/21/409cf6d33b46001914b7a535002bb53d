@@ -1,0 +1,10 @@
+package com.lanf0rt.superFoods;
+
+import net.minecraft.item.ItemFood;
+
+public class Shaurma extends ItemFood  {
+
+	 public Shaurma(int i, int j, boolean k){
+		    super(i,j,k);
+		    }  
+}

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "sfs",
+  "name": "Super Foods 1.0",
+  "description": "This mod adds super food.",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["lanf0rt"],
+  "credits": "Sino doesnt want to be in the credits, dont tell anyone please!",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

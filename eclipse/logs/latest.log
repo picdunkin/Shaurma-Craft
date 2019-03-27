@@ -1,0 +1,40 @@
+[19:21:40] [main/INFO]: Setting user: Player465
+[19:21:42] [Client thread/INFO]: LWJGL Version: 2.9.1
+[19:22:03] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Super Foods 1.0
+[19:22:04] [Sound Library Loader/INFO]: Sound engine started
+[19:22:07] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[19:22:07] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[19:22:07] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Super Foods 1.0
+[19:22:08] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[19:22:08] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[19:22:09] [Sound Library Loader/INFO]: Sound engine started
+[19:23:19] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[19:23:19] [Server thread/INFO]: Generating keypair
+[19:23:19] [Server thread/INFO]: Preparing start region for level 0
+[19:23:20] [Server thread/INFO]: Preparing spawn area: 54%
+[19:23:21] [Server thread/INFO]: Changing view distance to 12, from 10
+[19:23:22] [Server thread/INFO]: Player465[local:E:d13dd83f] logged in with entity id 356 at (204.66101798984602, 69.23936374880412, 459.05033927264145)
+[19:23:22] [Server thread/INFO]: Player465 присоединился к игре
+[19:23:23] [Server thread/INFO]: Saving and pausing game...
+[19:23:23] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[19:23:23] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[19:23:23] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[19:23:27] [Server thread/INFO]: Saving and pausing game...
+[19:23:27] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[19:23:27] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[19:23:27] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[19:24:01] [Server thread/INFO]: Player465 заработал достижение [Проверить карманы]
+[19:24:01] [Client thread/INFO]: [CHAT] Player465 заработал достижение [Проверить карманы]
+[19:24:41] [Server thread/INFO]: Saving and pausing game...
+[19:24:41] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[19:24:41] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[19:24:41] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[19:27:30] [Client thread/INFO]: Stopping!
+[19:27:30] [Server thread/INFO]: Stopping server
+[19:27:30] [Server thread/INFO]: Saving players
+[19:27:30] [Server thread/INFO]: Saving worlds
+[19:27:30] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[19:27:30] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[19:27:30] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[19:27:31] [Client Shutdown Thread/INFO]: Stopping server
+[19:27:31] [Client Shutdown Thread/INFO]: Saving players
